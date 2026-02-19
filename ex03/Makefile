@@ -6,7 +6,7 @@
 #    By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/15 12:09:51 by hsamira           #+#    #+#              #
-#    Updated: 2026/02/19 13:55:43 by hsamira          ###   ########.fr        #
+#    Updated: 2026/02/19 14:04:42 by hsamira          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ CXX = c++
 CXXFLAG = -Wall -Werror -Wextra -std=c++98 -MMD -MP
 
 SRC =  ClapTrap.cpp main.cpp \
-	   ScavTrap.cpp FragTrap.cpp
+	   ScavTrap.cpp FragTrap.cpp \
+	   DiamondTrap.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

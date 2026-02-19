@@ -1,24 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   DiamondTrap.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/15 12:09:46 by hsamira           #+#    #+#             */
-/*   Updated: 2026/02/19 13:54:58 by hsamira          ###   ########.fr       */
+/*   Created: 2026/02/19 14:03:34 by hsamira           #+#    #+#             */
+/*   Updated: 2026/02/19 14:03:35 by hsamira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "FragTrap.hpp"
-
-int main()
-{
-    FragTrap Frag("Frag1");
-
-    Frag.attack("Frag2");
-    Frag.highFivesGuys();
-
-    return 0;
-    
-}

@@ -6,7 +6,7 @@
 /*   By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 12:08:47 by hsamira           #+#    #+#             */
-/*   Updated: 2026/02/17 12:15:06 by hsamira          ###   ########.fr       */
+/*   Updated: 2026/02/19 13:57:43 by hsamira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int main()
 {
-    ClapTrap x("samira");
+    ClapTrap Clap("Clap1");
     
-    x.attack("rayan");
-    x.takeDamage(2);
-    x.beRepaired(1);
+    Clap.attack("Clap2");
+    Clap.takeDamage(2);
+    Clap.beRepaired(1);
 
     return 0;
     

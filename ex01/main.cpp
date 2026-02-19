@@ -6,7 +6,7 @@
 /*   By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 12:09:12 by hsamira           #+#    #+#             */
-/*   Updated: 2026/02/17 15:23:48 by hsamira          ###   ########.fr       */
+/*   Updated: 2026/02/19 13:56:48 by hsamira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int main()
 {
-    ScavTrap z("1");
+    ScavTrap Scav("Scav1");
 
-    z.attack("2");
-    z.guardGate();
+    Scav.attack("Scav2");
+    Scav.guardGate();
 
     return 0;
 }
