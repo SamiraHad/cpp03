@@ -6,7 +6,7 @@
 /*   By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 12:09:18 by hsamira           #+#    #+#             */
-/*   Updated: 2026/02/17 15:36:08 by hsamira          ###   ########.fr       */
+/*   Updated: 2026/02/20 14:07:47 by hsamira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ ScavTrap& ScavTrap::operator=( const ScavTrap& other )
 {
     if( this != &other)
     {
-        ClapTrap::operator=(other);
+        ClapTrap::operator=(other); //3eme affichage de l'operateur d'affectation
     }
     std::cout << "ScavTrap assignment operator called" << std::endl;
     return (*this);
