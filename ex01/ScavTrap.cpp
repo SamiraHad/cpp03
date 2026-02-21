@@ -6,7 +6,7 @@
 /*   By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 12:09:18 by hsamira           #+#    #+#             */
-/*   Updated: 2026/02/20 14:07:47 by hsamira          ###   ########.fr       */
+/*   Updated: 2026/02/21 10:33:02 by hsamira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ ScavTrap::ScavTrap(): ClapTrap("Default")
 
 ScavTrap::ScavTrap(std::string name): ClapTrap(name)
 {
-    _name= name;
+   _name= name;
     _hitPoints = 100;
-    _energyPoints = 50;
-    _attackDamage= 20;
+   _energyPoints = 50;
+   _attackDamage= 20;
     std::cout << "ScavTrap " << this->_name << " called" << std::endl; 
 }
 
@@ -52,11 +52,11 @@ void ScavTrap::attack(const std::string& target)
 {
     if(this->_hitPoints == 0 || this->_energyPoints == 0) 
     {
-        std::cout << "ScavTrap " << this->_name << " can't attack." << std::endl;
+        std::cout << "ScavTrap " << this->_name << " can't attack, has " << _hitPoints << " points of hit and " << _energyPoints << " points of energy!" << std::endl;
         return;
     }
     this->_energyPoints -= 1;
-    std::cout << "ScavTrap " << this->_name << " attacks " << target << ", causing " << this->_attackDamage << " points of damage!" << std::endl;
+    std::cout << "ScavTrap " << this->_name << " attacks " << target << ", causing " << this->_attackDamage << " points of damage ans has " << _energyPoints << " points of energy!" << std::endl;
     
     return; 
 }

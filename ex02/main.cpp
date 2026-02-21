@@ -6,35 +6,36 @@
 /*   By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 12:09:46 by hsamira           #+#    #+#             */
-/*   Updated: 2026/02/20 14:17:42 by hsamira          ###   ########.fr       */
+/*   Updated: 2026/02/21 12:08:28 by hsamira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 
-int main()
+int main(void)
 {
-    FragTrap Frag("Frag1");
-
-    Frag.attack("E");
-    Frag.highFivesGuys();
-
-    
-    std::cout << std::endl;
-    
-    
-    FragTrap copy(Frag);
-    copy.attack("E");
-    copy.highFivesGuys();
-    
+    FragTrap  frag("Frag");
+    FragTrap  frag1("Frag1");
     
     std::cout << std::endl;
 
-    FragTrap Frag2("F");
-    Frag2 = Frag;
-    Frag2.attack("E");
-    Frag2.highFivesGuys();
+    frag = frag1;
 
+    std::cout << std::endl;
 
-    return 0;
+    frag.attack("ennmy");
+    frag.takeDamage(20);
+    frag.beRepaired(10);
+    frag.highFivesGuys();
+    
+    std::cout << std::endl;
+
+    frag1.attack("ennmy");
+    frag1.takeDamage(6);
+    frag1.beRepaired(3);
+    frag1.highFivesGuys();
+    
+    std::cout << std::endl;
+    
+    return (0);
 }

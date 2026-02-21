@@ -6,7 +6,7 @@
 /*   By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 12:08:47 by hsamira           #+#    #+#             */
-/*   Updated: 2026/02/20 13:30:28 by hsamira          ###   ########.fr       */
+/*   Updated: 2026/02/21 12:20:34 by hsamira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,37 +14,33 @@
 
 int main()
 {
-    ClapTrap original("o");
-    
-    original.attack("E");
-    original.takeDamage(100);
-    original.beRepaired(10);
-    
+    ClapTrap a("a");
+    ClapTrap b(a);
+    ClapTrap c("c");
+
+    std::cout << std::endl;
+
+    c = a;
     
     std::cout << std::endl;
 
-    
-    ClapTrap copy(original);
-    
-    copy.attack("E");
-    copy.takeDamage(2);
-    copy.beRepaired(1);
+    a.attack("b"); // 10 - 1 = 9
+    b.takeDamage(5); //10 - 5 = 5
+    b.beRepaired(3); // hp: 5 + 3 = 8  et  10 - 1 = 9   
 
+    std::cout << std::endl;
     
+    b.attack("c");
+    c.takeDamage(15);
+    c.beRepaired(10);
+
     std::cout << std::endl;
 
+    c.attack("a");
+    a.takeDamage(20);
+    a.beRepaired(5);
 
-    ClapTrap c2("2");
-    ClapTrap c3("3");
-
-    c3 = c2;
-    c3.attack("E");
-    c3.takeDamage(60);
-    c3.beRepaired(4);
-    
-    
     std::cout << std::endl;
-
     return 0;
-    
 }
+    

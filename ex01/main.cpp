@@ -6,7 +6,7 @@
 /*   By: hsamira <hsamira@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 12:09:12 by hsamira           #+#    #+#             */
-/*   Updated: 2026/02/20 13:36:51 by hsamira          ###   ########.fr       */
+/*   Updated: 2026/02/21 12:19:44 by hsamira          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,29 @@
 
 int main()
 {
-    ScavTrap Scav("X");
-
-    Scav.attack("E");
-    Scav.guardGate();
-
+    ScavTrap s1("s1");
+    ScavTrap s2("s2");
+    
     std::cout << std::endl;
 
+    s2 = s1;
     
-    ScavTrap Scav2(Scav);
-
-    Scav2.attack("E");
-    Scav2.guardGate();
-
     std::cout << std::endl;
 
-    ScavTrap Scav3 = Scav;
-    Scav3.attack("E");
-    Scav3.guardGate();
-
+    s1.attack("ennmy");
+    s1.takeDamage(20);
+    s1.beRepaired(10);
+    s1.guardGate();
     
+    std::cout << std::endl;
 
+
+    s2.attack("ennmy1");
+    s2.takeDamage(15);
+    s2.beRepaired(5);
+    s2.guardGate();
+    
+    std::cout << std::endl;
+    
     return 0;
 }
